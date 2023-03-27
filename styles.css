@@ -1,0 +1,86 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    border-radius: 5%;
+    background-color: hsl(217, 19%, 24%);
+    box-shadow: 1px 1px 100px 1px rgb(17, 17, 17);
+}
+
+.advice-box > p{
+    letter-spacing: .3em;
+    margin-top: 5vh;
+    font-size: .75rem;
+    color: hsl(150, 100%, 66%);
+}
+
+.advice-box > h3{
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+    padding: 0 10%;
+}
+
+.divider-desktop{
+    padding: 5% 10%;
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+    transition: all 0.2s ease-out
+}
+
+.btn > img{
+    width: 20px;
+    height: 20px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(123, 139, 153);
+    padding: 2% 0;
+}
+
+.footer > div > a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 550px) {
+    main{
+        margin: 5% 5%;
+    }
+
+    .advice-box{
+        max-width: 90%;
+    }
+}
